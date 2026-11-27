@@ -172,7 +172,7 @@ jobs:
           KwSjSz9EU7ZdLTKguDHG1i7Aurkjl5Ivaaa00Iiiy/CWDDT5JMxyeaKTPQ9lEWWOwqRdbL1qXn5NKKo8MZcQlix4HjhT7K3ilBwgrKmndjl3afWwYIn1upEP
           mX76AdgBtln/5qUkovJRUCSvaPllhxz5Np2L09OTc21L+3R+/PbTiXZ2fP7p5OJcHWasHNnOLy+hK5P4gDFdKRTJbfzycDJdFTSN8UCypYURLnPgie4H7tO5
           t8mHjoFfuP1a5x0+aXyz4srtOHhGHHNWYNHnCINA2CZdpHS/HB4lX1HuKD9hXomE5IAKWb761hSl0CZuMvLDzSyKW9uN+DaHUDj4qmeF0eckqAO/y+4UPlOK
-          /CqJLnylFPya11IWkEIyIyIee+n4Hj7NAOvGkS0AOfhY6Ckjm43B9vd+RdWxuaOqAPw79diohR/XgUH9eK6Cy9q3388CtL+7OPx79C2PtZ9D8yFZoxcW/9yXSi
+          /CqJLnylFPya11IWkEIyIee+n4Hj7NAOvGkS0AOfhY6Ckjm43B9vd+RdWxuaOqAPw79diohR/XgUH9eK6Cy9q3388CtL+7OPx79C2PtZ9D8yFZoxcW/9yXSi
           bTe096/NFZfILGvT8HILsA30zItk8vNWHI4sfvpdLNTjjejjrWn+ZCTjbwKnRD5O+bsbQD21FdJHY1zoGG1Tq3XeS5LpdQXFnE1SK0/Zon9AS1PQX6f2soHH
           U2R0rrnNO93y29eKTeJ9KS5CevpdFVZUOSoxvyU3ah3k+0OxwZx/tQ6MkWbwLTAZgMYUvGMRDmbm40WZyzikK6KLqzuFp0L9bMaEgZoheZCJK/ipskuOJrgL
           XDG0ITnaLDB090XlLHTcOUxj5BfdUYBuGQouXmfn2RppkzS/t0CEAd5VAh+IONy7VGQHrlkKN+VVXDr9aKNsa7TtMYjSNMCDx8A2urnHrp5pFrd4EQM1CUBE
@@ -334,4 +334,4 @@ jobs:
           if ([string]::IsNullOrWhiteSpace($env:TS_KEY)) { throw 'Add TAILSCALE_AUTH_KEY to repository secrets.' }
           if ($env:RD_PASSWORD.Length -lt 12 -or $env:RD_PASSWORD -match '[\r\n]') { throw 'Add RUSTDESK_PASSWORD: at least 12 characters, no line breaks.' }
           Get-ChildItem scripts,desktop -Filter *.ps1 -Recurse | ForEach-Object {
-            $tokens = $null; $errors = $nu
+            $tokens = $null; $errors = $null
